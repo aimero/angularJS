@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Whitewater Adventures</title>
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="app/app.css" rel="stylesheet">
+    <link href="ext-module/psFramework/psFramework.css" rel="stylesheet">
+    <link href="ext-module/psMenu/psMenu.css" rel="stylesheet" >
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script src="ext-module/psMenu/psMenuModule.js"></script>
+    <script src="ext-module/psMenu/psMenuController.js"></script>
+    <script src="ext-module/psMenu/psMenuDirective.js"></script>
+    <script src="ext-module/psMenu/psMenuItemDirective.js"></script>
+
+
+    <script src="ext-module/psDashboard/psDashboardModule.js"></script>
+
+    <script src="ext-module/psFramework/psFrameworkModule.js"></script>
+    <script src="ext-module/psFramework/psFrameworkController.js"></script>
+    <script src="ext-module/psFramework/psFrameworkDirective.js"></script>
+
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+
+  </head>
+  <body class="container-fluid">
+
+    <ps-framework title="Whitewater Adventures"
+                  subtitle="Administrative Application"
+                  icon-file="">
+
+        <<ps-menu>
+            <ps-menu-item label="Dashboard" icon="fa-dashboard"></ps-menu-item>
+            <ps-menu-item label="Locations" icon="fa-location-arrow"></ps-menu-item>
+            <ps-menu-item label="Raft Guides" icon="fa-user"></ps-menu-item>
+        </ps-menu>
+
+    </ps-framework>
+
+  </body>
+</html>
